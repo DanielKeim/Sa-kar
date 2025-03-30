@@ -1,0 +1,47 @@
+Daten einlesen und inspizieren
+1. Daten einlesen:
+Laden Sie den Datensatz winequality-red.csv in einen Pandas DataFrame.
+2. Datensatz erkunden:
+Zeigen Sie die ersten und die letzten 5 Zeilen des DataFrames an.
+3. Zusammenfassung:
+Erhalten Sie eine Übersicht über die Spaltennamen, Datentypen und Anzahl der Nicht-Null-Werte. Zeigen Sie zusätzlich statistische Kennwerte aller numerischen Spalten an.
+
+Auswahl und Filterung
+4. Spalten auswählen:
+Wählen Sie die Spalten alcohol und pH aus und zeigen Sie die ersten 10 Zeilen an.
+5. Bedingte Auswahl:
+Filtern Sie die Daten, um nur die Zeilen anzuzeigen, bei denen der quality-Wert genau 8 ist.
+6. Mehrere Bedingungen:
+Finden Sie alle Einträge, bei denen der alcohol-Wert größer als 12.5 ist und die quality mindestens 7 beträgt.
+
+
+Datenbearbeitung
+7. Neue Spalte hinzufügen:
+Berechnen Sie die Kennzahl density_alcohol_ratio (Dichte geteilt durch Alkoholgehalt) und fügen Sie diese als neue Spalte hinzu.
+8. Werte ändern:
+Ersetzen Sie die Werte in der Spalte quality durch folgende Kategorien:
+
+Qualität 3 → "sehr schlecht"  
+Qualität 4 → "schlecht"  
+Qualität 5 → "okay"  
+Qualität 6 → "gut"  
+Qualität 7 oder höher → "sehr gut"
+9. Zeilen löschen:
+Entfernen Sie alle Zeilen, in denen der pH-Wert kleiner als 3.0 ist.
+10. Spaltenüberschriften anzeigen:
+Geben Sie die aktuellen Spaltennamen mit df.columns aus.
+11. Spaltenüberschriften ersetzen:
+Ersetzen Sie die Spaltennamen durch deutsche Bezeichnungen, z. B.:
+
+df.columns = ['Fixe Säure', 'Flüchtige Säure', 'Zitronensäure', 'Restzucker',
+              'Chloride', 'freie SO2', 'gebundene SO2', 'Gesamt SO2',
+              'Dichte', 'pH-Wert', 'Sulfate', 'Alkohol', 'Qualität']
+
+Visualisierung
+12. Seaborn Scatterplot:
+Erstellen Sie einen Scatterplot mit Seaborn, der die Beziehung zwischen Alkohol und Qualität visualisiert.
+
+Clustering
+13. KMeans-Clustering:
+Entfernen Sie die Spalte Qualität und clustern Sie den Datensatz mithilfe von KMeans. Fügen Sie die Cluster-Zugehörigkeit als neue Spalte cluster hinzu 
+
